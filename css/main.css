@@ -1,0 +1,584 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ===== Begin Styles ==================================================
+Colours:
+Red:              #d32f2f;
+Red dark:         #a92f2f;
+Red light:        #f02f2f;
+White:            #ffffff;
+White medium:     #f2f2f2;
+White dark:       #cccccc;
+Deep blue:        #212026;
+Deep blue medium: #353843;
+Deep blue light:  #393a41; linear-gradient(100deg, #393a41 0%, #353843 100%);
+========================================================================== */
+
+body {
+    width: 100%;
+    font: 15px/24px 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: white;
+    background: url('../img/background-road.jpg') #212026;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+body:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -10;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.flexbox > *:not(head, body) {
+    flex: 1 100%;
+    padding: 10px;
+}
+
+.flexbox .flex {
+    flex: 1 auto;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: left;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+
+    transition: 0.1s;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    position: relative;
+    color: #f02f2f;
+    text-decoration: none;
+}
+
+
+
+/* =================== HEADER SECTION =================== */
+
+.header-container {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
+    z-index: 1;
+}
+
+.header {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.header .logo {
+    float: left;
+}
+
+.header #logo {
+    height: 2em;
+    padding: 1em;
+}
+
+.header-nav {
+    float: right;
+}
+
+.header-nav ul li {
+    display: inline-block;
+}
+
+.header-nav a {
+    width: 5em;
+    margin: 1em 1em 1em 0;
+    padding: 0.2em 1.4em;
+
+    border: solid 2px rgba(0,0,0,0);
+    border-radius: 2px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    transition: 0.1s;
+}
+
+.header-nav a:hover {
+    border: solid 2px #f02f2f;
+    border-radius: 2px;
+    color: white;
+}
+
+/* =================== PROGRESS BAR SECTION =================== */
+
+.progress-nav {
+    position: fixed;
+    margin-top: 4em;
+    margin-left: 4em;
+    z-index: 1;
+}
+
+.progress-nav ul {
+    position: relative;
+}
+
+.progress-nav ul:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(-2em + 0.25em);
+    width: 1px;
+    height: 100%;
+    background: #797979;
+    z-index: -1;
+}
+
+.progress-nav ul li a {
+    position: relative;
+}
+
+.progress-nav ul li a:before, 
+.progress-nav ul li a:after {
+    content: "";
+    position: absolute;
+    top: 1.3em;
+    left: -2em;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background: #797979;
+
+    transition: 0.1s;
+}
+
+.progress-nav ul li a:hover::before {
+    top: calc(1.3em - 0.35em);
+    left: calc(-2em - 0.35em);
+    width: 1.2em;
+    height: 1.2em;
+    background: rgba(240, 47, 47, 0.5);
+}
+
+.progress-nav ul li a:hover::after {
+    background: rgba(240, 47, 47, 1);
+}
+
+/* =================== MAIN SECTION LAYOUTS =================== */
+
+.main-section {
+    width: 100%;
+    padding-top: 65px;
+}
+
+.content-container:not(:first-child) {
+    background: #212026;
+}
+
+.content {
+    width: 100%;
+    max-width: 56em;
+    margin: 0 auto;
+    padding: 4em 0;
+}
+
+.content-text {
+    display: inline-block;
+    vertical-align: top;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+/* Home specific */
+.phone-frame {
+    display: inline-block;
+    position: relative;
+    margin: 52px 24px;
+    margin-left: 5em;
+}
+
+.phone-frame:before {
+    content: "";
+    position: absolute;
+    top: -52px;
+    left: -24px;
+    width: 300px;
+    height: calc(1.888 * 300px);
+    background: url('../img/screens/phone-frame.png');
+    background-size: 100% 100%;
+}
+
+.phone-frame .screen {
+    height: calc(640px * 0.7);
+}
+
+@media only screen and (max-width: 900px) {
+    .phone-frame:before {
+        top: -46px;
+        left: -24px;
+        width: 260px;
+        height: calc(1.888 * 260px);
+    }
+
+    .phone-frame .screen {
+        height: calc(640px * 0.6);
+    }
+}
+
+.feature.content .content-text {
+    margin-left: 4em;
+    padding-top: 14em;
+    text-align: left;
+}
+
+.feature.content .content-text p {
+    max-width: 24em;
+}
+
+/* Process specific */
+.process.content .content-text {
+    width: 100%;
+}
+
+.process.content .content-text h2 {
+    text-align: center;
+}
+
+/* =================== PROCESS SPECIFIC =================== */
+
+.brief {
+    max-width: 40%;
+    font-size: 0.8em;
+}
+
+.brief tr th {
+    min-width: 6em;
+    padding-right: 1em;
+    vertical-align: top;
+    text-align: right;
+    font-weight: 400;
+    color: #CCC;
+}
+
+.brief tr td {
+    line-height: 1.5;
+}
+
+.overflow img {
+    height: 300px;
+}
+
+.thumbnail {
+    text-align: center;
+}
+
+.thumbnail img {
+    height: 300px;
+}
+
+.profile {
+    flex: 1 auto;
+}
+
+.profile img {
+}
+
+.profile img, .profile-name, .profile-role {
+    display: block;
+    text-align: center;
+}
+
+.profile-name {
+
+}
+
+.profile-role {
+    font-style: italic;
+    color: #CCC;
+}
+
+/* =================== FOOTER SECTION =================== */
+.footer-container {
+    width: 100%;
+    background: linear-gradient(100deg, #393a41 0%, #353843 100%);   
+}
+
+.footer {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1em;
+    font-weight: 400;
+}
+
+
+.header-container,
+.footer-container,
+.main aside {
+    /*background: #f16529;*/
+}
+
+.title {
+    color: white;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+   @media only screen and (max-width: 800px) {
+
+    /*nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+        }*/
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+    ======================== */
+
+/*    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }*/
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+    ==================== */
+
+    /*.header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                
+           }*/
+
+/* ============
+    WIDE: Menu
+    ============ */
+
+    .title {
+        float: left;
+    }
+
+/*    nav {
+        float: right;
+        width: 38%;
+    }*/
+
+/* ============
+    WIDE: Main
+    ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+    =============== */
+
+    /*.wrapper {
+        width: 1026px;  1140px - 10% for margins 
+        margin: 0 auto;
+        }*/
+    }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+
+
+
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 auto;
+}
+}
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3 0px;
+}
+
+.aside-1 {
+    order: 1;
+}
+
+.main {
+    order: 2;
+}
+
+.aside-2 {
+    order: 3;
+}
+
+.footer {
+    order: 4;
+}
+}
+
+.m-scene .scene-element {
+  animation-duration: 0.25s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+.m-scene .scene-element-fadein {
+  animation-name: fadeIn;
+}
+
+.m-scene.is-exiting .scene-element {
+  animation-direction: alternate-reverse;
+}
+
+/*
+ * Keyframes
+ */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
