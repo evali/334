@@ -45,7 +45,7 @@ if ( typeof Object.create !== 'function' ) {
 			self.elem = elem;
 			self.$elem = $( elem );
 
-			self.headers = self.$elem.find( 'h1, h2, h3, h4, h5, h6' );
+			self.headers = self.$elem.find( 'h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]' ); // fix: detect only ones with ID's
 			
 			self.spy();
 		},
@@ -56,7 +56,8 @@ if ( typeof Object.create !== 'function' ) {
 			$( window ).scroll( function( e ) {
 				// get all the header on top of the viewport
 				current = self.headers.map( function( e ) {
-					if ( (($( this ).offset().top - 100) - $( window ).scrollTop()) < 10 ) {
+					var elementTop = $( this ).offset().top - 100;
+					if ((elementTop - $(window).scrollTop()) < 10) {
 						return this;
 					}
 				});

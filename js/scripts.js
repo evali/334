@@ -136,7 +136,7 @@ $(document).ready(function () {
 	
 	}
 
-	$( '.detail-container' ).scrollspy();
+	$( 'body' ).scrollspy();
  	$('[data-toggle="tooltip"]').tooltip();
 });	
 
