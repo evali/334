@@ -68,6 +68,7 @@ button {
 	visibility: visible!important;
 }
 
+
 /*-----------------------------------------------------------------------------------*/
 /*	KEY COLOR
 /*-----------------------------------------------------------------------------------*/
@@ -81,13 +82,13 @@ header h1,
 }
 
 .features p{
-	color: #06b872;
+	color: white;
 }
 
 /*---- Background ----*/
 .features,
 .detail .carousel-indicators .active {
-	background: #0bf397;	
+	background: #353843;	
 }
 	
 
@@ -97,7 +98,7 @@ header h1,
 
 nav.navbar{
 	position: fixed;
-	top: -100%;
+	/*top: -100%;*/
 	margin-bottom: 0px;
 	padding: 10px 0px 10px 0px;
 	width: 100%;
@@ -116,7 +117,7 @@ nav.navbar.fixed-to-top{
 .navbar-default{
 	border: none;
 	/*border-bottom: 1px solid #eee;*/
-	background: rgba(0,0,0,0.8);
+	background: rgba(0,0,0,0);
 	opacity: 0.95;
 	/*display: none;*/
 }
@@ -174,12 +175,12 @@ header{
 }
 
 header h1{
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	font-weight: 700;
 	font-weight: 300;
 	font-size: 100px;
 	font-family: 'Roboto Condensed', sans-serif;
-	
+	color: white;
 }
 
 header p.lead{
@@ -190,9 +191,10 @@ header p.lead{
 header .carousel-iphone{
 	margin-right: auto;
 	margin-left: auto;
-	width: 320px;
+    width: 334px;
+    padding-right: 4px;
 	height: 672px;
-	background: url('../img/iphone-front.png') no-repeat;
+	background: url('../img/screenshots/phone-frame.png') no-repeat;
 	background-size: 100%;
 	
 }
@@ -201,7 +203,7 @@ header .carousel {
 	position: relative;
 	margin-right: auto;
 	margin-left: auto;
-	padding: 95px 0px 0px 4px;
+	padding: 60px 0px 0px 4px;
 	width: 282px;
 }
 
@@ -254,7 +256,6 @@ header .carousel-indicators li {
 	background: url('../img/dunes.jpg');
 	background-position: center top;
 	background-repeat: repeat-x;
-	color: white;
 }
 
 .payoff h1{
@@ -262,6 +263,7 @@ header .carousel-indicators li {
 	font-weight: 300;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 2.8em;
+	color: white;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -307,15 +309,16 @@ header .carousel-indicators li {
 	padding-top: 95px;
 	width: 320px;
 	height: 450px;
-	background: url('../img/iphone-front.png') no-repeat;
+	background: url('../img/screenshots/phone-frame.png') no-repeat;
 	background-size: 100%;
 }
 
 .detail .app-screenshot img{
 	margin-right: auto;
 	margin-left: auto;
-	padding-left: 4px;
-	width: 280px;
+	margin-top: -38px;
+	padding-left: 0px;
+	width: 266px;
 }
 
 .detail .carousel-indicators {
@@ -359,7 +362,6 @@ header .carousel-indicators li {
 	overflow: hidden;
 	padding: 150px 0px 150px 0px;
 	min-height: 400px;
-	color: black;
 }
 
 .features p {
@@ -422,6 +424,21 @@ header .carousel-indicators li {
 	
 }
 
+.social .profile {
+	display: inline-block;
+	margin: 0 3em;
+}
+
+.profile img, .profile-name, .profile-role {
+    display: block;
+    text-align: center;
+}
+
+.social .profile-role {
+    font-style: italic;
+    color: #CCC;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*	GET-IT
 /*-----------------------------------------------------------------------------------*/
@@ -429,6 +446,15 @@ header .carousel-indicators li {
 .get-it{
 	padding: 100px 0px 160px 0px;
 	text-align: center;
+}
+
+.get-it a {
+	color: #d32f2f;
+}
+
+.get-it a:hover {
+	color: #f02f2f;
+	text-decoration: none;
 }
 
 .get-it button.app-store{
