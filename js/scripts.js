@@ -24,49 +24,47 @@ $(window).scroll(function () {
 		$('.navbar-default').css('padding', '0');
 	} else if (scrollTop == 0)   {
 		$('.navbar-default').css('background', 'rgba(0,0,0,0)');
-// $('.navbar-default').removeClass('fixed-to-top');
-$('.navbar-default').css('padding', '10px 0');
-}
-
-
-//animations	
-$('.payoff h1').each(function(){
-	var imagePos = $(this).offset().top;
-	var topOfWindow = $(window).scrollTop();
-
-	if (imagePos < topOfWindow+650) {
-		$(this).addClass("animated fadeInLeft");
+	// $('.navbar-default').removeClass('fixed-to-top');
+	$('.navbar-default').css('padding', '10px 0');
 	}
-});
-
-$('.features .col-md-4').each(function(){
-	var imagePos = $(this).offset().top;
-	var topOfWindow = $(window).scrollTop();
-
-	if (imagePos < topOfWindow+650) {
-		$(this).addClass("animated flipInX");
-	}
-});
-
-$('.social .col-md-12').each(function(){
-	var imagePos = $(this).offset().top;
-	var topOfWindow = $(window).scrollTop();
-
-	if (imagePos < topOfWindow+550) {
-		$(this).addClass("animated fadeInLeft");
-	}
-});
-
-$('.get-it button.app-store').each(function(){
-	var imagePos = $(this).offset().top;
-	var topOfWindow = $(window).scrollTop();
-
-	if (imagePos < topOfWindow+850) {
-		$(this).addClass("animated pulse");
-	}
-});
 
 
+	//animations	
+	$('.payoff h1').each(function(){
+		var imagePos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+
+		if (imagePos < topOfWindow+650) {
+			$(this).addClass("animated fadeInLeft");
+		}
+	});
+
+	$('.features .col-md-4').each(function(){
+		var imagePos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+
+		if (imagePos < topOfWindow+650) {
+			$(this).addClass("animated flipInX");
+		}
+	});
+
+	$('.social .col-md-12').each(function(){
+		var imagePos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+
+		if (imagePos < topOfWindow+550) {
+			$(this).addClass("animated fadeInLeft");
+		}
+	});
+
+	$('.get-it button.app-store').each(function(){
+		var imagePos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+
+		if (imagePos < topOfWindow+850) {
+			$(this).addClass("animated pulse");
+		}
+	});
 });
 
 

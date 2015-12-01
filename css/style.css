@@ -326,7 +326,7 @@ header{
 .process{
 	padding: 150px 0px 0px 0px;
 	height: 960px;
-	background: url('../img/process-cover.jpeg');
+	background: url('../img/process-cover.jpg');
 	background-color: white!important;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -336,10 +336,10 @@ header{
 
 header h1{
 	/*text-transform: uppercase;*/
-	font-weight: 700;
+	/*font-weight: 700;*/
 	font-weight: 300;
 	font-size: 100px;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: white;
 }
 
@@ -413,7 +413,7 @@ header .carousel-indicators li {
 	overflow: hidden;
 	padding: 230px 0px 150px 0px;
 	min-height: 600px;
-	background: url('../img/jeep-forest.jpeg');
+	background: url('../img/jeep-forest.jpg');
 	background-position: center top;
 	background-repeat: repeat-x;
 }
@@ -809,7 +809,7 @@ header, .social{
 .domain{
 	padding: 150px 0px 0px 0px;
 	height: 600px;
-	background: url('../img/domain.jpg');
+	background: url('../img/process/domain.jpg');
 	background-color: white!important;
 	background-size: cover;
 	background-repeat: no-repeat;
