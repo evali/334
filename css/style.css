@@ -154,6 +154,7 @@ nav.navbar.fixed-to-top{
 	font-weight: 400;
 	font-size: 2em;
 	font-family: 'Roboto Condensed', sans-serif;
+	cursor: pointer;
 }
 
 .navbar-default .navbar-brand img {
@@ -165,7 +166,24 @@ nav.navbar.fixed-to-top{
 .progress-nav {
 	float: left;
     position: relative;
-    left: 24%;
+}
+
+@media (min-width: 768px) {
+	.progress-nav {
+		left: 0%;
+	}
+}
+
+@media (min-width: 992px) {
+	.progress-nav {
+		left: 4%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.progress-nav {
+		left: 21%;
+	}
 }
 
 .progress-nav ul {
@@ -192,9 +210,10 @@ nav.navbar.fixed-to-top{
 	display: inline-block;
     position: relative;
     top: 24px;
-    width: 150px;
-    padding: 0 24px;
+	width: 150px;
+    padding: 0 12px;
 
+    font-family: "Roboto Condensed";
     font-size: 1em;
     text-align: center;
     white-space: nowrap;
@@ -231,6 +250,32 @@ nav.navbar.fixed-to-top{
 
 .progress-nav ul li a:hover::after {
     background: rgba(240, 47, 47, 1);
+}
+
+@media (max-width: 991px) {
+	.progress-nav ul li a {
+		width: 24px;
+		font-size: 1px;
+		color: rgba(0,0,0,0);
+	}
+	.progress-nav ul:after {
+		top: 28px;
+    	left: 0;
+	}
+
+	.progress-nav ul li a:before, 
+	.progress-nav ul li a:after {
+		top: -12px;
+    	left: 50%;
+	}
+
+	.progress-nav ul li a:hover::before {
+	    top: calc(-12px - 4px);
+	    left: calc(50% - 4px);
+	}
+}
+
+@media (max-width: 767px) {
 }
 
 /*-----------------------------------------------------------------------------------*/
