@@ -1,5 +1,6 @@
 // toggle visibility for css3 animations 
 $(document).ready(function() {
+	$('.navbar.navbar-default').addClass('visibility');
 	$('header').addClass('visibility');
 	$('.carousel-phone').addClass('visibility');
 	$('.payoff h1').addClass('visibility');
@@ -9,6 +10,7 @@ $(document).ready(function() {
 
 //phone carousel animation
 $(window).load(function () {
+	$('.navbar.navbar-default').addClass('animated fadeIn');
 	$('header').addClass("animated fadeIn");
 	$('.carousel-phone').addClass("animated fadeInLeft");
 });

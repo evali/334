@@ -126,6 +126,7 @@ nav.navbar.fixed-to-top{
 	background: rgba(0,0,0,0);
 	opacity: 0.95;
 	/*display: none;*/
+	visibility: hidden;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -189,6 +190,9 @@ nav.navbar.fixed-to-top{
 @media (min-width: 1200px) {
 	.progress-nav {
 		left: 21%;
+	}
+	.process-nav {
+		left: 19%;
 	}
 }
 
@@ -634,6 +638,11 @@ header .carousel-indicators li {
 .profile img, .profile-name, .profile-role {
     display: block;
     text-align: center;
+}
+
+.profile img{
+	width: 100px;
+	border-radius: 50%;
 }
 
 .social .profile-role {
