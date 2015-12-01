@@ -32,17 +32,16 @@
 				
 				<nav class="process-nav progress-nav">
 					<ul>
-						<li><a href="#brief"				onclick="$('#brief').animatescroll({padding:71});" 				data-toggle="tooltip" data-placement="bottom" title="Project Brief"></a></li>
-						<li><a href="#concept"			onclick="$('#concept').animatescroll({padding:71});" 			data-toggle="tooltip" data-placement="bottom" title="Concept"></a></li>
-						<li><a href="#research"			onclick="$('#research').animatescroll({padding:71});" 		data-toggle="tooltip" data-placement="bottom" title="Research"></a></li>
-						<li><a href="#wireframes"		onclick="$('#wireframes').animatescroll({padding:71});" 	data-toggle="tooltip" data-placement="bottom" title="Wireframes"></a></li>
-						<li><a href="#mockups"			onclick="$('#mockups').animatescroll({padding:71});" 			data-toggle="tooltip" data-placement="bottom" title="Mockups"></a></li>
-						<li><a href="#flowchart"		onclick="$('#flowchart').animatescroll({padding:71});" 		data-toggle="tooltip" data-placement="bottom" title="Interaction Flowchart"></a></li>
-						<li><a href="#prototype"		onclick="$('#prototype').animatescroll({padding:71});" 		data-toggle="tooltip" data-placement="bottom" title="Interactive Prototype"></a></li>
-						<li><a href="#testing"			onclick="$('#testing').animatescroll({padding:71});" 			data-toggle="tooltip" data-placement="bottom" title="User Testing"></a></li>
-						<li><a href="#refinements"	onclick="$('#refinements').animatescroll({padding:71});" 	data-toggle="tooltip" data-placement="bottom" title="Refinements"></a></li>
-						<li><a href="#future"				onclick="$('#future').animatescroll({padding:71});" 			data-toggle="tooltip" data-placement="bottom" title="Future Opportunities"></a></li>
-						<li><a href="#team"					onclick="$('#team').animatescroll({padding:71});" 				data-toggle="tooltip" data-placement="bottom" title="Our Team"></a></li>
+						<li><a href="#domain"		onclick="$('#domain').animatescroll({padding:180});" 		data-toggle="tooltip" data-placement="bottom" title="Domain"></a></li>
+						<li><a href="#persona"		onclick="$('#persona').animatescroll({padding:180});" 		data-toggle="tooltip" data-placement="bottom" title="Persona"></a></li>
+						<li><a href="#whydesign"	onclick="$('#whydesign').animatescroll({padding:180});" 	data-toggle="tooltip" data-placement="bottom" title="Why Design"></a></li>
+						<li><a href="#research"		onclick="$('#research').animatescroll({padding:180});" 		data-toggle="tooltip" data-placement="bottom" title="Research"></a></li>
+						<li><a href="#wireframe"	onclick="$('#wireframe').animatescroll({padding:180});" 	data-toggle="tooltip" data-placement="bottom" title="Wireframes"></a></li>
+						<li><a href="#prototype"	onclick="$('#prototype').animatescroll({padding:180});" 	data-toggle="tooltip" data-placement="bottom" title="Interactive Prototype"></a></li>
+						<li><a href="#testing"		onclick="$('#testing').animatescroll({padding:180});" 		data-toggle="tooltip" data-placement="bottom" title="User Testing"></a></li>
+						<li><a href="#refinements"	onclick="$('#refinements').animatescroll({padding:180});" 	data-toggle="tooltip" data-placement="bottom" title="Refinements"></a></li>
+						<li><a href="#future"		onclick="$('#future').animatescroll({padding:180});" 		data-toggle="tooltip" data-placement="bottom" title="Future Opportunities"></a></li>
+						<li><a href="#team"			onclick="$('#team').animatescroll({padding:180});" 			data-toggle="tooltip" data-placement="bottom" title="Our Team"></a></li>
 					</ul>
 				</nav>
 
@@ -59,17 +58,9 @@
 					<li><a href="index.html">Home</a></li>
 					<li><a href="process.html">Process</a></li>
 				</ul>
-				<!-- </div> -->
-<!-- <div class="collapse navbar-collapse navbar-ex1-collapse">
-<ul class="nav navbar-nav">
-<li><a onclick="$('header').animatescroll({padding:71});">Start</a></li>
-<li><a onclick="$('.detail').animatescroll({padding:71});">Screens</a></li>
-<li><a onclick="$('.features').animatescroll({padding:71});">Features</a></li>
-<li><a onclick="$('.social').animatescroll({padding:71});">Social </a></li>
-</ul>
-</div> -->
-</div>
-</nav>
+			</div>
+		</div>
+	</nav>
 
 
 <!-- HEADER
@@ -79,8 +70,8 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h1>Process</h1>
-					<p class="lead">We'd love you how we design Inigtion</p>
-				</div>    
+					<p class="lead">We'd love to show you how we designed Ignition</p>
+				</div>
 			</div>    
 		</div>
 	</header>
@@ -98,7 +89,7 @@
 				</div>
 				<div class="col-md-offset-1 col-md-7">
 					<p>Project Brief:</p>
-					<p>esearch, propose, design, prototype, evaluate and refine an interactive system designed for a specific domain and context.</p>
+					<p>Research, propose, design, prototype, evaluate and refine an interactive system designed for a specific domain and context.</p>
 				</div>
 			</div>
 		</div>
@@ -110,7 +101,7 @@
 	<section class="domain">
 		<div class="container">
 			<div class="row">
-				<h1>Why we chose the domain?</h1>
+				<h1 id="domain">Why did we choose this domain?</h1>
 				<div class="col-md-4 white">
 					<h3>many opportunities and pain points in the field of car maintenance</h3>
 				</div>
@@ -119,7 +110,7 @@
 				</div>
 				<div class="col-md-4">
 					<h3>a unique domain that the team was interested in learning and tackling</h3>
-				</div>				
+				</div>
 			</div>
 		</div>
 	</section>
@@ -130,7 +121,7 @@
 	<section class="persona padding-section">
 		<div class="container">
 			<div class="row">
-				<h1>Who is this for?</h1>
+				<h1 id="persona">Who is this for?</h1>
 				<div class="col-md-2"></div>
 				<div class="col-md-8">
 					<p>car owners who are curious or want to be experts in maintenance of their cars</p>
@@ -147,7 +138,7 @@
 		<div class="container">
 			<div class="row text-left">
 				<div class="col-md-4">
-					<h3>What are we making to solve this problem?</h3>
+					<h3 id="whydesign">What are we making to solve this problem?</h3>
 					<p>a mobile app that allows users to identify car issues, find tools, and fix it themselves.</p>
 				</div>
 				<div class="col-md-4">
@@ -174,7 +165,7 @@
 	<section class="research padding-section">
 		<div class="container">
 			<div class="row">
-				<h1>Research</h1>
+				<h1 id="research">Research</h1>
 			</div>
 		</div>
 	</section>
@@ -183,7 +174,7 @@
 	================================================== -->
 	<section class="wireframe padding-section">
 		<div class="container">
-			<h1 class="padding">Wireframes</h1>
+			<h1 id="wireframe" class="padding">Wireframes</h1>
 			<div class="row">
 				<div class="col-sm-12 col-md-6">
 					<img src="img/ideation2.jpg" class="img-responsive" alt="">

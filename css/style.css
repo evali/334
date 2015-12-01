@@ -286,15 +286,15 @@ nav.navbar.fixed-to-top{
 	}
 }
 
+.process-nav.progress-nav ul:after {
+	top: 28px;
+	left: 0;
+}
+
 .process-nav.progress-nav ul li a {
 	width: 39px;
 	font-size: 1px;
 	color: rgba(0,0,0,0);
-}
-
-.process-nav.progress-nav ul:after {
-	top: 28px;
-	left: 0;
 }
 
 .process-nav.progress-nav ul li a:before, 
@@ -303,8 +303,9 @@ nav.navbar.fixed-to-top{
 	left: 50%;
 }
 
+.process-nav.progress-nav ul li.active a::before,
 .process-nav.progress-nav ul li a:hover::before {
-    top: calc(-12px - 4px);
+    top: calc(-13px - 4px);
     left: calc(50% - 4px);
 }
 
@@ -813,6 +814,7 @@ header, .social{
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: white;
+	text-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 .domain h3, .domain h1, .why-design h3{
