@@ -1,288 +1,275 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ignition - A Car Maintenance App</title>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<head>
+	<title>Ignition - A Car Maintenance App</title>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <!-- CSS 
-        ================================================== -->
-    <!-- Bootstrap 3-->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <!-- Google Fonts -->
-  	<link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
-    <!-- Template Styles -->
-    <!-- <link rel="stylesheet" href="css/normalize.min.css"> -->
-  	<!-- <link rel="stylesheet" href="css/main.css"> -->
-    <link href="css/style.css" rel="stylesheet" media="screen">
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>	
-  </head>
-  <body>
-	  
-	  <!-- NAVBAR
-	      ================================================== -->
-	  <nav class="navbar navbar-default" role="navigation">
-	  	  <div class="container">
-			  <div class="navbar-header">
-			    <a class="navbar-brand logo" href="index.html" onclick="$('header').animatescroll({padding:71});">
-			    	<img id="logo" src="img/ignition_logotype_horiz.png" alt="Ignition">
-		    	</a>
+<!-- CSS 
+	================================================== -->
+	<!-- Bootstrap 3-->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+	<!-- Template Styles -->
+	<!-- <link rel="stylesheet" href="css/normalize.min.css"> -->
+	<!-- <link rel="stylesheet" href="css/main.css"> -->
+	<link href="css/style.css" rel="stylesheet" media="screen">
+	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>	
+</head>
+<body>
 
-					<nav class="progress-nav">
-						<ul>
-							<li><a onclick="$('#identify').animatescroll({padding:71});">Identify Problems</a></li>
-							<li><a onclick="$('#find').animatescroll({padding:71});">Find Parts and Tools</a></li>
-							<li><a onclick="$('#fix').animatescroll({padding:71});">Fix it Yourself</a></li>
-						</ul>
-					</nav>
+<!-- NAVBAR
+	================================================== -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand logo" href="index.html" onclick="$('header').animatescroll({padding:71});">
+					<img id="logo" src="img/ignition_logotype_horiz.png" alt="Ignition">
+				</a>
 
-		    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
+				<nav class="progress-nav">
+					<ul>
+						<li><a onclick="$('#identify').animatescroll({padding:71});">Identify Problems</a></li>
+						<li><a onclick="$('#find').animatescroll({padding:71});">Find Parts and Tools</a></li>
+						<li><a onclick="$('#fix').animatescroll({padding:71});">Fix it Yourself</a></li>
+					</ul>
+				</nav>
 
-			  </div>
-			  <div class="collapse navbar-collapse navbar-ex1-collapse">
-			    <ul class="nav navbar-nav">
-			    	<li><a href="index.html">Home</a></li>
-			    	<li><a href="process.html">Process</a></li>
-			    </ul>
-		    <!-- </div> -->
-			  <!-- <div class="collapse navbar-collapse navbar-ex1-collapse">
-			    <ul class="nav navbar-nav">
-			      <li><a onclick="$('header').animatescroll({padding:71});">Start</a></li>
-			      <li><a onclick="$('.detail').animatescroll({padding:71});">Screens</a></li>
-			      <li><a onclick="$('.features').animatescroll({padding:71});">Features</a></li>
-			      <li><a onclick="$('.social').animatescroll({padding:71});">Social	</a></li>
-			    </ul>
-			  </div> -->
-		  </div>
-	  </nav>
-	  
-	  
-	   <!-- HEADER
-	   ================================================== -->	  
-	  <header>
-		 <div class="container">
-			 <div class="row">
-				 <div class="col-md-12">
-					  <h1>Be in control</h1>
-					  <p class="lead">save money. learn. confidence.</p> 
-					  <div class="carousel-iphone">
-					  	<div id="carousel-example-generic" class="carousel slide">
-					    
-					    <!-- Indicators -->
-					    <ol class="carousel-indicators">
-					      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					    </ol>
-					  
-					    <!-- Wrapper for slides -->
-					    <div class="carousel-inner">
-					      <div class="item active">
-					        <img src="img/screenshots/onboarding.jpg" alt="App Screen 1">
-					      </div>
-					      <div class="item">
-					        <img src="img/screenshots/onboarding.jpg" alt="App Screen 2">
-					      </div>
-					      <div class="item">
-					        <img src="img/screenshots/onboarding.jpg" alt="App Screen 3">
-					      </div>
-					      
-					    </div>
-					  </div>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+			</div>
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="process.html">Process</a></li>
+				</ul>
+				<!-- </div> -->
+<!-- <div class="collapse navbar-collapse navbar-ex1-collapse">
+<ul class="nav navbar-nav">
+<li><a onclick="$('header').animatescroll({padding:71});">Start</a></li>
+<li><a onclick="$('.detail').animatescroll({padding:71});">Screens</a></li>
+<li><a onclick="$('.features').animatescroll({padding:71});">Features</a></li>
+<li><a onclick="$('.social').animatescroll({padding:71});">Social	</a></li>
+</ul>
+</div> -->
+</div>
+</nav>
+
+
+<!-- HEADER
+	================================================== -->	  
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Be in control</h1>
+					<p class="lead">save money. learn. be confident.</p> 
+					<div class="carousel-phone">
+						<div id="carousel-example-generic" class="carousel slide">
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="img/screenshots/onboarding.jpg" alt="App Screen 1">
+								</div>
+							</div>
+
+						</div>
 					</div>
 				</div>	  
 			</div>    
 		</div>
-	 </header>
+	</header>
 
 
-	  <!-- PURCHASE
-	      ================================================== -->
-	  <section class="purchase">
-		  <div class="container">
-			  <div class="row">
-				  <div class="col-md-offset-2 col-md-8">
-					 <h1>We help car owners feel confident and in control when fixing their own cars.
-</h1>
-					 	    <p class="lead">Ignition is an app that motivates car owners to diagnose car issues, find tools and parts in order to fix the issues themselves. </p>
-					 	    <!-- <button type="button" class="app-store"></button>	 -->
-				  </div>
-			  </div>
-		  </div>
-	  </section>
-	  
-	  
-	  <!-- PAYOFF 
-	      ================================================== -->
-	  <section class="payoff">
+<!-- PURCHASE
+	================================================== -->
+	<section class="purchase">
 		<div class="container">
-			  <div class="row">
-				  <div class="col-md-12">
-					  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</h1>
-				  </div>
-			  </div>
-		  </div>	  
-	  </section>
-	  
-	  
-	  <!-- DETAILS 
-	      ================================================== -->
-	  <section class="detail">
+			<div class="row">
+				<div class="col-md-offset-2 col-md-8">
+					<h1>We help car owners feel confident and in control when fixing their own cars.
+					</h1>
+					<p class="lead">Ignition is an app that motivates car owners to diagnose car issues, find tools and parts in order to fix the issues themselves. </p>
+					<!-- <button type="button" class="app-store"></button>	 -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<!-- PAYOFF 
+	================================================== -->
+	<section class="payoff">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</h1>
+				</div>
+			</div>
+		</div>	  
+	</section>
+
+
+<!-- DETAILS 
+	================================================== -->
+	<section class="detail">
 		<div class="container">			
-		  	<div class="item">
-		      	<div class="row">
-		      		<div class="col-sm-12 col-md-offset-1 col-md-6 text-left">
-		      			<h1 id="identify">Identify Problems</h1>
-		      			<h3>Quickly diagnose the problem by OBDKey code or by inputting the symptom</h3>
-		      			<p>We help you identify the urgency, difficulty, pricing, and service time to allow users to make informed decisions.</p>
-		      		</div>
-		      		<div class="col-sm-5 col-md-5">
-		      			<div class="app-screenshot">
-		      				<img src="img/screenshots/onboarding.jpg" class="img-responsive" alt="App Screen 1">
-		      			</div>
-		      		</div>
-		      	</div>
+			<div class="item">
+				<div class="row">
+					<div class="col-sm-12 col-md-offset-1 col-md-6 text-left">
+						<h1 id="identify">Identify Problems</h1>
+						<h3>Quickly diagnose the problem by OBDKey code or by inputting the symptom</h3>
+						<p>We help you identify the urgency, difficulty, pricing, and service time to allow users to make informed decisions.</p>
+					</div>
+					<div class="col-sm-5 col-md-5">
+						<div class="app-screenshot">
+							<img src="img/screenshots/onboarding.jpg" class="img-responsive" alt="App Screen 1">
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 	<section class="detail">
 		<div class="container">			
-		  	<div class="item">
-		      	<div class="row">
-		      		<div class="col-sm-12 col-md-offset-1 col-md-6">
-		      			<h1 id="find">Find Parts and Tools</h1>
-		      			<h3>Quickly diagnose the problem by OBDKey code or by inputting the symptom</h3>
-		      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-		      		</div>
-		      		<div class="col-sm-12 col-md-5">
-		      			<div class="app-screenshot">
-		      				<img src="img/screenshots/onboarding.jpg" class="img-responsive" alt="App Screen 1">
-		      			</div>
-		      		</div>
-		      	</div>
+			<div class="item">
+				<div class="row">
+					<div class="col-sm-12 col-md-offset-1 col-md-6">
+						<h1 id="find">Find Parts and Tools</h1>
+						<h3>Quickly diagnose the problem by OBDKey code or by inputting the symptom</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+					</div>
+					<div class="col-sm-12 col-md-5">
+						<div class="app-screenshot">
+							<img src="img/screenshots/onboarding.jpg" class="img-responsive" alt="App Screen 1">
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 	<section class="detail">
 		<div class="container">
-		  	<div class="item">
-		      	<div class="row">
-		      		<div class="col-sm-12 col-md-offset-1 col-md-6 text-left">
-		      			<h1 id="fix">Fix it Yourself</h1>
-		      			<h3>Quickly diagnose the problem by OBDKey code or by inputting the symptom</h3>
-		      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-		      		</div>
-		      		<div class="col-sm-12 col-md-5">
-		      			<div class="app-screenshot">
-		      				<img src="img/screenshots/onboarding.jpg" class="img-responsive" alt="App Screen 1">
-		      			</div>
-		      		</div>
-		      	</div>
-		    </div>
+			<div class="item">
+				<div class="row">
+					<div class="col-sm-12 col-md-offset-1 col-md-6 text-left">
+						<h1 id="fix">Fix it Yourself</h1>
+						<h3>Quickly diagnose the problem by OBDKey code or by inputting the symptom</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+					</div>
+					<div class="col-sm-12 col-md-5">
+						<div class="app-screenshot">
+							<img src="img/screenshots/onboarding.jpg" class="img-responsive" alt="App Screen 1">
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
-	
-	  
-	  <!-- FEATURES
-	      ================================================== -->
-	  <section class="features design-discipline">
-		  <div class="container">
-			  <div class="row">
-					
-				  <div class="col-md-3">
-					  <div class="circle"><i class="icon-check"></i></div>
-					  <h2>Motivational</h2>
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-				  </div>
 
-				  <div class="col-md-3">
-					  <div class="circle"><i class="icon-bookmark"></i></div>
-					  <h2>Education</h2>
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-				  </div>
-				
-				  <div class="col-md-3">
-					  <div class="circle"><i class="icon-paper-plane"></i></div>
-					  <h2>Fun</h2>
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-				  </div>
-				 
-				  <div class="col-md-3">
-					  <div class="circle"><i class="icon-like"></i></div>
-					  <h2>Confidence</h2>
-					  <p>Blah so you can love doing it.</p>
-				  </div>
-				  
-			  </div>
-		  </div>
-	  </section>
-	  
-	
-	  <!-- SECONDARY FEATURES
-	     ================================================== -->
+
+<!-- FEATURES
+	================================================== -->
+	<section class="features design-discipline">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-3">
+					<div class="circle"><i class="icon-check"></i></div>
+					<h2>Motivational</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+				</div>
+
+				<div class="col-md-3">
+					<div class="circle"><i class="icon-bookmark"></i></div>
+					<h2>Education</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+				</div>
+
+				<div class="col-md-3">
+					<div class="circle"><i class="icon-paper-plane"></i></div>
+					<h2>Fun</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+				</div>
+
+				<div class="col-md-3">
+					<div class="circle"><i class="icon-like"></i></div>
+					<h2>Confidence</h2>
+					<p>Blah so you can love doing it.</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+<!-- SECONDARY FEATURES
+	================================================== -->
 	<section class="secondary-features">
-	  	<div class="container">
-	  		  <div class="row">
-	  			  <div class="col-md-12">
-	  			  	<h2>Secondary features</h2>
-	  			   	<p>Home screen (car profile, reminders, history, toolbox)See your progress at a glance
-Get a quick summary of your latest fixes and money saved ever since using Ignition. Keep track of the history of your fixes and coming soon.Toolbox, History</p>
-	  		  </div>
-	  	  </div>	  
-	  </section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Secondary features</h2>
+					<p>Home screen (car profile, reminders, history, toolbox)See your progress at a glance
+						Get a quick summary of your latest fixes and money saved ever since using Ignition. Keep track of the history of your fixes and coming soon.Toolbox, History</p>
+					</div>
+				</div>	  
+			</section>
 
 
-	 <!-- SOCIAL
-	     ================================================== -->
-	<!--   <section class="social">
-	  	<div class="container">
-	  		  <div class="row">
-	  			  <div class="col-md-12">
-	  			  	<h2>Connect with us</h2>
-	  			   	<a class="icon-facebook"></a>
-	  			   	<a class="icon-twitter"></a>
-	  			   	<a class="icon-google"></a>
-	  			   	<a class="icon-instagram"></a>
-	  			   	<a class="icon-pinterest"></a>
-	  			   </div>
-	  		  </div>
-	  	  </div>	  
-	  </section> -->
-	  
-	
-	 <!-- GET IT 
-	     ================================================== -->
-	  <section class="get-it">
-	  	<div class="container">
-	  		<div class="row">
-	  			<div class="col-md-12">
-	  				<h1><a class="link" href="process.html">View our process</a></h1>
-	  				<p class="lead">From inception to implementation</p>
-	  			</div>
-	  			<div class="col-md-12">
-	  				<hr />
-		  			<ul>
-	                	<li><a>&copy; 2015 Team Ignition</a></li>
-                	</ul>
-	  			</div>
-	  		</div>
-	  	</div>
-	  </section>
-	  
-	 
-	 <!-- JAVASCRIPT
-	     ================================================== -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/animatescroll.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/retina.min.js"></script>
-  	
-</html>
+<!-- SOCIAL
+	================================================== -->
+<!--   <section class="social">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h2>Connect with us</h2>
+<a class="icon-facebook"></a>
+<a class="icon-twitter"></a>
+<a class="icon-google"></a>
+<a class="icon-instagram"></a>
+<a class="icon-pinterest"></a>
+</div>
+</div>
+</div>	  
+</section> -->
+
+
+<!-- GET IT 
+	================================================== -->
+	<section class="get-it">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1><a class="link" href="process.html">View our process</a></h1>
+					<p class="lead">From inception to implementation</p>
+				</div>
+				<div class="col-md-12">
+					<hr />
+					<ul>
+						<li><a>&copy; 2015 Team Ignition</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<!-- JAVASCRIPT
+	================================================== -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/animatescroll.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/retina.min.js"></script>
+
+	</html>

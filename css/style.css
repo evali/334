@@ -261,7 +261,7 @@ header p.lead{
 }
 
 
-header .carousel-iphone{
+header .carousel-phone{
 	margin-right: auto;
 	margin-left: auto;
     width: 334px;
@@ -269,14 +269,14 @@ header .carousel-iphone{
 	height: 672px;
 	background: url('../img/screenshots/phone-frame.png') no-repeat;
 	background-size: 100%;
-	
+	background-position-y: 36px;
 }
 
 header .carousel {
 	position: relative;
 	margin-right: auto;
 	margin-left: auto;
-	padding: 60px 0px 0px 4px;
+	padding: 95px 0px 0px 4px;
 	width: 282px;
 }
 
@@ -627,7 +627,7 @@ header, .social{
 
 @media (max-width:480px){
 
-	header .carousel-iphone, .detail .app-screenshot{
+	header .carousel-phone, .detail .app-screenshot{
 		width: 280px;
 	}
 	
