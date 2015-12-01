@@ -603,7 +603,7 @@ header .carousel-indicators li {
 	overflow: hidden;
 	padding: 80px 0px 150px 0px;
 	min-height: 350px;
-	background: url('../img/sea.jpg');
+	background: url('../img/mountain.jpg');
 	background-position: center top;
 	background-repeat: repeat-x;
 	color: white;
@@ -875,8 +875,4 @@ header, .social{
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: white;
-}
-
-.why-design.refinements {
-	background: url('../img/refinements.jpg');
 }
