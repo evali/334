@@ -298,6 +298,17 @@ header{
 	color: white;
 }
 
+.process{
+	padding: 150px 0px 0px 0px;
+	height: 960px;
+	background: url('../img/process-cover.jpeg');
+	background-color: white!important;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	height: 100vh;
+}
+
 header h1{
 	/*text-transform: uppercase;*/
 	font-weight: 700;
