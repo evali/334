@@ -8,16 +8,16 @@ $(document).ready(function() {
 });
 
 
-//iphone carousel animation
+//phone carousel animation
 $(window).load(function () {
 	$('header').addClass("animated fadeIn");
-	$('.carousel-iphone').addClass("animated fadeInLeft");
+	$('.carousel-phone').addClass("animated fadeInLeft");
 });
 
 // Fixed navbar
 $(window).scroll(function () {
 
-var scrollTop = $(window).scrollTop();
+	var scrollTop = $(window).scrollTop();
 
 	$('.navbar-default').css('display', 'block');
 	if (scrollTop > 300) {
@@ -136,6 +136,8 @@ $(document).ready(function () {
 	
 	}
 
+	$( '.detail-container' ).scrollspy();
+ 	$('[data-toggle="tooltip"]').tooltip();
 });	
 
 
@@ -154,14 +156,6 @@ $(window).resize(function () {
 
 });	
 
-
-// iPhone Header Carousel
-$('header .carousel').carousel({
-  interval: 000
-})
-
-// iPhone Features Carousel
-$('.detail .carousel').carousel({
-  interval: 000
-})
-
+$('.progress-nav a').click(function(e) {
+	e.preventDefault();
+});
