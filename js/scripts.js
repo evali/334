@@ -108,6 +108,14 @@ $(document).ready(function () {
 
 	$( 'body' ).scrollspy();
 	$('[data-toggle="tooltip"]').tooltip();
+
+	// $('video').each(function(){
+	//     if ($(this).is(":in-viewport")) {
+	//         $(this)[0].play();
+	//     } else {
+	//         $(this)[0].pause();
+	//     }
+	// });
 });	
 
 
@@ -126,4 +134,16 @@ $(window).resize(function () {
 
 $('.progress-nav a').click(function(e) {
 	e.preventDefault();
+});
+
+$('.detail .skill').click(function(e) {
+	$('.detail .skill').removeClass('active');
+	$(e.currentTarget).addClass('active');
+	if ($(e.currentTarget).prop('id') == 'beginner') {
+		$('#fix-beginner').removeClass('hidden');
+		$('#fix-expert').addClass('hidden');
+	} else if ($(e.currentTarget).prop('id') == 'expert') {
+		$('#fix-beginner').addClass('hidden');
+		$('#fix-expert').removeClass('hidden');
+	}
 });

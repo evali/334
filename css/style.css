@@ -473,7 +473,7 @@ header .carousel-indicators li {
 	background-size: 100%;
 }
 
-.detail .app-screenshot img{
+.detail .app-screenshot img, .detail .app-screenshot video{
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: -38px;
@@ -514,6 +514,27 @@ header .carousel-indicators li {
 	cursor: pointer;
 }
 
+.detail .skill {
+	background: #EEE;
+	border-radius: 2px;
+	padding: 2px 0;
+	color: #333;
+	cursor: pointer;
+}
+
+.detail .skill:after {
+	content 
+}
+
+.detail .skill:hover {
+	text-decoration: none;
+	color: #f02f2f;
+}
+
+.detail .skill.active {
+	/*text-decoration: underline;*/
+	color: #d32f2f;
+}
 
 .detail .item{
 	padding-top:5em;
@@ -794,6 +815,10 @@ header, .social{
 .padding-side{
 	padding-right:20%;
 	padding-left: 20%;
+}
+
+.padding-section ul{
+	font-size: 1.2em;
 }
 
 .secondary-features{
