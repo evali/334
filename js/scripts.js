@@ -1,7 +1,7 @@
 // toggle visibility for css3 animations 
 $(document).ready(function() {
 	$('header').addClass('visibility');
-	$('.carousel-iphone').addClass('visibility');
+	$('.carousel-phone').addClass('visibility');
 	$('.payoff h1').addClass('visibility');
 	$('.features .col-md-4').addClass('visibility');
 	$('.social .col-md-12').addClass('visibility');
@@ -108,14 +108,6 @@ $(document).ready(function () {
 
 	$( 'body' ).scrollspy();
 	$('[data-toggle="tooltip"]').tooltip();
-
-	// $('video').each(function(){
-	//     if ($(this).is(":in-viewport")) {
-	//         $(this)[0].play();
-	//     } else {
-	//         $(this)[0].pause();
-	//     }
-	// });
 });	
 
 
@@ -146,4 +138,16 @@ $('.detail .skill').click(function(e) {
 		$('#fix-beginner').addClass('hidden');
 		$('#fix-expert').removeClass('hidden');
 	}
+});
+
+$("#toolbox-history").click(function() {
+  $("#toolbox-history").fadeTo(125,0.50, function() {
+  	var src = $("#toolbox-history").attr("src");
+  	if (src == "img/screenshots/home-toolbox.png") {
+      $("#toolbox-history").attr("src", "img/screenshots/home-history.png");
+  	} else {
+	  $("#toolbox-history").attr("src", "img/screenshots/home-toolbox.png");
+  	}
+  }).fadeTo(250,1);
+  return false;
 });

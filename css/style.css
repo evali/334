@@ -473,6 +473,22 @@ header .carousel-indicators li {
 	background-size: 100%;
 }
 
+.app-screenshot.scroll {
+	overflow: hidden;
+	/*height: 473px;*/
+}
+
+.app-screenshot.scroll .scroll-inner {
+	overflow: auto;
+	height: 473px;
+	margin: -38px -102px 15px 15px;
+	padding-right: 100px;
+}
+
+.app-screenshot.scroll .scroll-inner img {
+	margin-top: 0px;
+}
+
 .detail .app-screenshot img, .detail .app-screenshot video{
 	margin-right: auto;
 	margin-left: auto;
@@ -846,6 +862,10 @@ header, .social{
 	color:white;
 }
 
+.domain.prototype {
+	height: 1200px;
+	background: url('../img/background-road.jpg');
+}
 
 .why-design{
 	padding: 150px 0px 0px 0px;
