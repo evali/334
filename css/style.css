@@ -286,7 +286,26 @@ nav.navbar.fixed-to-top{
 	}
 }
 
-@media (max-width: 767px) {
+.process-nav.progress-nav ul li a {
+	width: 39px;
+	font-size: 1px;
+	color: rgba(0,0,0,0);
+}
+
+.process-nav.progress-nav ul:after {
+	top: 28px;
+	left: 0;
+}
+
+.process-nav.progress-nav ul li a:before, 
+.process-nav.progress-nav ul li a:after {
+	top: -13px;
+	left: 50%;
+}
+
+.process-nav.progress-nav ul li a:hover::before {
+    top: calc(-12px - 4px);
+    left: calc(50% - 4px);
 }
 
 /*-----------------------------------------------------------------------------------*/
