@@ -160,6 +160,79 @@ nav.navbar.fixed-to-top{
 	height: 1em;
 }
 
+/* =================== PROGRESS BAR SECTION =================== */
+
+.progress-nav {
+	float: left;
+    position: relative;
+    left: 24%;
+}
+
+.progress-nav ul {
+    position: relative;
+    padding-left: 0;
+}
+
+.progress-nav ul:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #797979;
+    z-index: -1;
+}
+
+.progress-nav ul li {
+	display: inline-block;
+}
+
+.progress-nav ul li a {
+	display: inline-block;
+    position: relative;
+    top: 24px;
+    width: 150px;
+    padding: 0 24px;
+
+    font-size: 1em;
+    text-align: center;
+    white-space: nowrap;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.progress-nav ul li a:hover {
+	text-decoration: none;
+	color: #f02f2f;
+}
+
+.progress-nav ul li a:before, 
+.progress-nav ul li a:after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #797979;
+
+    transition: 0.1s;
+}
+
+.progress-nav ul li a:hover::before {
+    top: calc(-8px - 4px);
+    left: calc(50% - 4px);
+    width: 16px;
+    height: 16px;
+    background: rgba(240, 47, 47, 0.5);
+}
+
+.progress-nav ul li a:hover::after {
+    background: rgba(240, 47, 47, 1);
+}
+
 /*-----------------------------------------------------------------------------------*/
 /* HEADER 
 /*-----------------------------------------------------------------------------------*/

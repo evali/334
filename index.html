@@ -18,7 +18,7 @@
   	<!-- <link rel="stylesheet" href="css/main.css"> -->
     <link href="css/style.css" rel="stylesheet" media="screen">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>	
-      </head>
+  </head>
   <body>
 	  
 	  <!-- NAVBAR
@@ -26,9 +26,18 @@
 	  <nav class="navbar navbar-default" role="navigation">
 	  	  <div class="container">
 			  <div class="navbar-header">
-			    <a class="navbar-brand logo" href="index.html">
+			    <a class="navbar-brand logo" href="index.html" onclick="$('header').animatescroll({padding:71});">
 			    	<img id="logo" src="img/ignition_logotype_horiz.png" alt="Ignition">
 		    	</a>
+
+					<nav class="progress-nav">
+						<ul>
+							<li><a onclick="$('#identify').animatescroll({padding:71});">Identify Problems</a></li>
+							<li><a onclick="$('#find').animatescroll({padding:71});">Find Parts and Tools</a></li>
+							<li><a onclick="$('#fix').animatescroll({padding:71});">Fix it Yourself</a></li>
+						</ul>
+					</nav>
+
 		    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
@@ -92,8 +101,8 @@
 			</div>    
 		</div>
 	 </header>
-	  
-	  
+
+
 	  <!-- PURCHASE
 	      ================================================== -->
 	  <section class="purchase">
@@ -130,7 +139,7 @@
 		  	<div class="item">
 		      	<div class="row">
 		      		<div class="col-sm-12 col-md-offset-1 col-md-6 text-left">
-		      			<h1>Identify Problems</h1>
+		      			<h1 id="identify">Identify Problems</h1>
 		      			<h3>Quickly diagnose the problem by OBDKey code or by inputting the symptom</h3>
 		      			<p>We help you identify the urgency, difficulty, pricing, and service time to allow users to make informed decisions.</p>
 		      		</div>
@@ -147,15 +156,15 @@
 		<div class="container">			
 		  	<div class="item">
 		      	<div class="row">
+		      		<div class="col-sm-12 col-md-offset-1 col-md-6">
+		      			<h1 id="find">Find Parts and Tools</h1>
+		      			<h3>Quickly diagnose the problem by OBDKey code or by inputting the symptom</h3>
+		      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+		      		</div>
 		      		<div class="col-sm-12 col-md-5">
 		      			<div class="app-screenshot">
 		      				<img src="img/screenshots/onboarding.jpg" class="img-responsive" alt="App Screen 1">
 		      			</div>
-		      		</div>
-		      		<div class="col-sm-12 col-md-offset-1 col-md-6 text-left">
-		      			<h1>Find Parts and Tools</h1>
-		      			<h3>Quickly diagnose the problem by OBDKey code or by inputting the symptom</h3>
-		      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
 		      		</div>
 		      	</div>
 			</div>
@@ -166,7 +175,7 @@
 		  	<div class="item">
 		      	<div class="row">
 		      		<div class="col-sm-12 col-md-offset-1 col-md-6 text-left">
-		      			<h1>Fix it Yourself</h1>
+		      			<h1 id="fix">Fix it Yourself</h1>
 		      			<h3>Quickly diagnose the problem by OBDKey code or by inputting the symptom</h3>
 		      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
 		      		</div>
