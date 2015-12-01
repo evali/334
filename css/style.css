@@ -21,7 +21,7 @@ _/_/_/_/    _/_/_/  _/    _/    _/_/_/    _/_/_/
 
 body{
 	text-align: center;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
@@ -294,7 +294,7 @@ header .carousel-indicators li {
 }
 
 .detail p{
-	color: #aaa;
+	color: grey;
 }
 
 .detail .carousel-control{
@@ -594,4 +594,15 @@ header, .social{
         background-size: 98%;
     	color: white;
     }
+}
+
+
+
+/*Custom*/
+.text-left{
+	text-align: left;
+}
+
+.text-center{
+	text-align: center;
 }
