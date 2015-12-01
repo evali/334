@@ -77,7 +77,7 @@ header h1,
 .payoff h1,
 .details .carousel,
 .social a:hover{
-	color: #0bf397;
+	color: #f02f2f;
 }
 
 .features p{
@@ -115,25 +115,36 @@ nav.navbar.fixed-to-top{
 
 .navbar-default{
 	border: none;
-	border-bottom: 1px solid #eee;
-	background: #fff;
+	/*border-bottom: 1px solid #eee;*/
+	background: rgba(0,0,0,0.8);
 	opacity: 0.95;
-	display: none;
+	/*display: none;*/
 }
 
 .navbar-default .navbar-nav>li>a {
 	color: #aaa;
 	font-size: 1.2em;
+	
+	margin-top: 0.8em;
+    padding: 0.2em 1.4em;
+	border: solid 2px rgba(0,0,0,0);
+    border-radius: 2px;
+
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
 	color: #3A3A3A;	
 	cursor: pointer;
-	-webkit-transition: all 300ms ease-in-out;
-	-moz-transition: all 300ms ease-in-out;
-	-ms-transition: all 300ms ease-in-out;
-	-o-transition: all 300ms ease-in-out;
-	transition: all 300ms ease-in-out;
+	-webkit-transition: all 100ms ease-in-out;
+	-moz-transition: all 100ms ease-in-out;
+	-ms-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+
+	border: solid 2px #f02f2f;
+    color: white;
 }
 
 .navbar-default .navbar-brand{
@@ -144,6 +155,9 @@ nav.navbar.fixed-to-top{
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
+.navbar-default .navbar-brand img {
+	height: 1em;
+}
 
 /*-----------------------------------------------------------------------------------*/
 /* HEADER 
@@ -152,7 +166,7 @@ nav.navbar.fixed-to-top{
 header{
 	padding: 150px 0px 0px 0px;
 	height: 960px;
-	background: url('../img/nepal.jpg');
+	background: url('../img/background-road.jpg');
 	background-color: white!important;
 	background-size: cover;
 	background-repeat: no-repeat;

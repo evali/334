@@ -19,13 +19,15 @@ $(window).scroll(function () {
 
 var scrollTop = $(window).scrollTop();
 
-	if (scrollTop > 200) {
-		$('.navbar-default').css('display', 'block');
+	$('.navbar-default').css('display', 'block');
+	if (scrollTop > 300) {
 		$('.navbar-default').addClass('fixed-to-top');
-			
+		$('.navbar-default').css('background', 'rgba(0,0,0,0.8)');
+		$('.navbar-default').css('padding', '0');
 	} else if (scrollTop == 0)   {
-	
-		$('.navbar-default').removeClass('fixed-to-top');
+		$('.navbar-default').css('background', 'rgba(0,0,0,0)');
+		// $('.navbar-default').removeClass('fixed-to-top');
+		$('.navbar-default').css('padding', '10px 0');
 	}
 	
 	
@@ -155,11 +157,11 @@ $(window).resize(function () {
 
 // iPhone Header Carousel
 $('header .carousel').carousel({
-  interval: 3000
+  interval: 000
 })
 
 // iPhone Features Carousel
 $('.detail .carousel').carousel({
-  interval: 4000
+  interval: 000
 })
 
