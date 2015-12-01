@@ -791,10 +791,18 @@ header, .social{
 	color: white;
 }
 
-.domain h3, .domain h1{
+.domain h3, .domain h1, .why-design h3{
 	color:white;
 }
 
 
-
+.why-design{
+	padding: 150px 0px 0px 0px;
+	height: 600px;
+	background: url('../img/why-design.jpeg');
+	background-color: white!important;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+}
 
